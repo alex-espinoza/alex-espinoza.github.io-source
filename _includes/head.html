@@ -1,0 +1,22 @@
+{% if page.layout == "post" %}
+  <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncatewords: 50 }}"></meta>
+
+  <meta property="og:title" content="{{ page.title }} - {{ site.title }}" />
+  <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncatewords: 50 }}" />
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | prepend: 'https:'}}" />
+  <meta property="og:image" content="https:{{ site.s3_url }}{{ site.s3_social_embed_folder }}{{ page.social_embed_url }}" />
+  <meta name="twitter:card" content="summary_large_image">
+{% else %}
+  <meta name="description" content="We are a group of friends who absolutely love cooking and baking new recipes. On our site you will find compiled lists of our favorites found around the food blogosphere."></meta>
+
+  <meta property="og:title" content="{{ site.title }} - For The Glutton In All Of Us" />
+  <meta property="og:description" content="We are a group of friends who absolutely love cooking and baking new recipes. On our site you will find compiled lists of our favorites found around the food blogosphere." />
+  <meta property="og:url" content="{{ site.url | prepend: 'https:'}}" />
+  <meta property="og:image" content="https:{{ site.s3_url }}/assets/giddy-gourmand-fb-header.png" />
+  <meta name="twitter:card" content="summary_large_image">
+{% endif %}
+
+<!-- Critical Path CSS - https://jonassebastianohlsson.com/criticalpathcssgenerator/ -->
+<style>
+  {% asset_source critical.css %}
+</style>

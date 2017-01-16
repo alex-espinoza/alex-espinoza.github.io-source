@@ -1,0 +1,23 @@
+---
+layout: "default"
+---
+
+{% for post in paginator.posts %}
+  {% include index-post-list-single-post.html %}
+{% endfor %}
+
+<div class="paginator-section row">
+  <div class="col-sm-6">
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="btn btn-primary btn-block btn-lg">&#8592; View Older Posts</a>
+    {% endif %}
+  </div>
+
+  <div class="col-sm-6">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="btn btn-primary btn-block btn-lg">View Newer Posts &#8594;</a>
+    {% endif %}
+  </div>
+</div>
+
+<hr>

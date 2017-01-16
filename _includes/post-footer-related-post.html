@@ -1,0 +1,6 @@
+<div class="col-md-6 post-nav">
+  <a href="{{ related_post.url | prepend:site.baseurl }}">
+    <img class="post-thumbnail" src="{{ site.s3_url }}{{ site.s3_thumbnail_folder }}{{ related_post.thumbnail_url }}" alt="{{ related_post.title }}" />
+  </a>
+  <h2 class="post-title-link"><a href="{{ related_post.url | prepend:site.baseurl }}">{{ related_post.title }}</a></h2>
+</div>

@@ -1,0 +1,11 @@
+source "https://rubygems.org"
+
+gem "gemrat"
+gem "jekyll-assets"
+gem "aws-sdk", "~> 2"
+gem "classifier-reborn"
+gem "jekyll-paginate"
+gem "uglifier", "3.0.4"
+gem "sass", "3.4.22"
+gem "autoprefixer-rails", "6.5.4"
+gem "pry"

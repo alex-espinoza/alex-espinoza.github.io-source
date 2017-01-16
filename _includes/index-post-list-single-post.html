@@ -1,0 +1,17 @@
+<div class="post-container">
+  <div class="post-thumbnail-container col-sm-5">
+    <a href="{{ post.url | prepend:site.baseurl }}">
+      <img class="post-thumbnail" src="{{ site.s3_url }}{{ site.s3_thumbnail_folder }}{{ post.thumbnail_url }}" alt="{{ post.title }}" />
+    </a>
+  </div>
+  <div class="col-sm-7 post-info-container">
+    <div class="post-header-home">
+      <h1>
+        <a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a>
+      </h1>
+    </div>
+    <div class="post-excerpt-home">
+      {{ post.excerpt | strip_html | truncatewords: 50 }}
+    </div>
+  </div>
+</div>

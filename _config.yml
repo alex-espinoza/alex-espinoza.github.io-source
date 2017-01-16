@@ -1,0 +1,42 @@
+baseurl: "" # The subpath of your site. Use "" if you're hosting a blog at the root level.
+url: "//alex.aspria.net" # the base hostname & protocol for your site
+title: "alex espinoza"
+s3_url: "//d1u3dvhpmzrzxk.cloudfront.net"
+s3_post_images_folder: "/post-images"
+s3_thumbnail_folder: "/post-thumbnails"
+s3_pinterest_folder: "/pinterest-images"
+s3_social_embed_folder: "/social-embed-images"
+paginate: 10
+paginate_path: "/page/:num"
+
+# This is used by feed.xml. Uncomment if you want to use it.
+# description: "..."
+
+gems:
+  - jekyll-paginate
+  - jekyll-assets
+exclude:
+  - "README.md"
+  - "CHANGELOG.md"
+  - "CNAME"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "s3_website.yml"
+  - "deploy.sh"
+permalink: :title
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+assets:
+  sources:
+    - _assets/sass
+    - _assets/js
+  autoprefixer:
+    browsers:
+     - "last 2 versions"
+     - "> 5%"
+     - "IE > 9"
