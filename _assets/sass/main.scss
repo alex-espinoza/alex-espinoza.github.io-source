@@ -1,14 +1,16 @@
-$font-family-base: "Merriweather", "Helvetica Neue", Arial, sans-serif;
-$headings-font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
-$headings-font-weight: 700;
+$background-color: #2b333a;
+$main-text-color: #fae8da;
 
-$font-size-base: 15px;
-$font-size-h1: floor(($font-size-base * 2));
-$font-size-h2: floor(($font-size-base * 1.4));
-$font-size-h3: floor(($font-size-base * 1));
-$font-size-h4: floor(($font-size-base * 1));
-$font-size-h5: floor(($font-size-base * 1));
-$font-size-h6: floor(($font-size-base * 1));
+$font-family-base: "Fauna One", Georgia, serif;
+$headings-font-family: "Fauna One", Georgia, serif;
+
+$font-size-base: 1.1rem;
+$font-size-h1: 3rem;
+$font-size-h2: 2.56rem;
+$font-size-h3: 2rem;
+// $font-size-h4: floor(($font-size-base * 1));
+// $font-size-h5: floor(($font-size-base * 1));
+// $font-size-h6: floor(($font-size-base * 1));
 $blockquote-font-size: floor(($font-size-base * 1.25));
 $line-height-base: 1.8;
 $headings-line-height: 1.3;
