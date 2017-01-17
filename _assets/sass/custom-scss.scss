@@ -45,6 +45,28 @@ a {
   position: fixed;
 }
 
+#fixed-container .floating-line.one {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1000px;
+  height: 2px;
+  background-color: $background-color;
+  transform: rotate(-10deg) translate(-30%);
+  transition: background-color 2s;
+}
+
+#fixed-container .floating-line.two {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 500px;
+  height: 2px;
+  background-color: $background-color;
+  transform: rotate(-50deg) translate(-30%, -60px);
+  transition: background-color 2s;
+}
+
 #fixed-container .scroll-hint {
   position: absolute;
   right: 0;
