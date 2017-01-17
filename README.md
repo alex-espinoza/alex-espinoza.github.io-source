@@ -11,4 +11,12 @@ jekyll serve
 
 ## Deploying to production
 
-Make sure you have an `s3_config.yml` then run the deploy bash script with `./deploy.sh` - MAKE SURE `jekyll serve` IS NOT RUNNING
+* Make changes in the *source* branch
+* Build and test the site locally via `jekyll build` then `jekyll serve` (accessible at localhost:4000)
+* Commit changes to *source* branch
+* `git publish-website` which consists of the following steps
+  - `git branch -D master`
+  - `git checkout -b master`
+  - `git filter-branch --subdirectory-filter _site/ -f`
+  - `git checkout source`
+  - `git push --all origin`
