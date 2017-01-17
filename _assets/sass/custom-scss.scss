@@ -168,3 +168,30 @@ a {
     pointer-events: auto;
   }
 }
+
+@media #{$small-and-down} {
+  h1 {
+    font-size: $font-size-h1-small-screen;
+  }
+
+  h2 {
+    font-size: $font-size-h2-small-screen;
+  }
+
+  h3 {
+    font-size: $font-size-h3-small-screen;
+  }
+
+  #fixed-container .hero-text,
+  #fixed-container .work-introduction,
+  #fixed-container .single-work-example,
+  #fixed-container .links-and-contact {
+    width: 90%;
+  }
+
+  #fixed-container .links-and-contact {
+    a {
+      font-size: $font-size-h2-small-screen;
+    }
+  }
+}
