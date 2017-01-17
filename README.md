@@ -20,3 +20,5 @@ jekyll serve
   - `git filter-branch --subdirectory-filter _site/ -f`
   - `git checkout source`
   - `git push --all origin`
+
+Done!
