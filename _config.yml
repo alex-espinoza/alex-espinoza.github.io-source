@@ -35,6 +35,10 @@ assets:
   sources:
     - _assets/sass
     - _assets/js
+  compress:
+    css: true
+    js: true
+  digest: true
   autoprefixer:
     browsers:
      - "last 2 versions"
