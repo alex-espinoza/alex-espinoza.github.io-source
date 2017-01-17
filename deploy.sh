@@ -16,6 +16,7 @@ cp -r _site/* ../alex-espinoza.github.io
 timestamp=$(date +"%Y-%m-%d_%H-%M-%S")
 cd ../alex-espinoza.github.io
 git checkout master
+git pull origin master
 git add -A
 git commit -m "Updated site at $timestamp"
 git push origin master
