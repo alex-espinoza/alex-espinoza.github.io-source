@@ -18,7 +18,6 @@ gems:
 exclude:
   - "README.md"
   - "CHANGELOG.md"
-  - "CNAME"
   - "Gemfile"
   - "Gemfile.lock"
   - "s3_website.yml"
