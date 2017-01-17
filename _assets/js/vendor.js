@@ -1,1 +1,1 @@
-//= require jquery.min.js
+//= require ScrollMagic.min.js
