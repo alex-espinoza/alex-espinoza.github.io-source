@@ -21,7 +21,6 @@ showHeroTextStaggered();
 function changeFloatingLineColor() {
   var colorArray = ["#a6c1bb", "#e3eae5", "#65606f", "#7f8a9f"];
   var floatingLineElements = Array.from(document.getElementsByClassName('floating-line'));
-  console.log(floatingLineElements)
 
   floatingLineElements.forEach(function(element) {
     setInterval(function() {
