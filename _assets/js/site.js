@@ -101,6 +101,6 @@ new ScrollMagic.Scene({
   triggerElement: bodyElement,
   offset: 4700
 })
-.setClassToggle(".links-and-contact", "show")
+.setClassToggle(".links-and-contact, .scroll-hint", "show")
 // .addIndicators({name: "7 - show links and contact"})
 .addTo(controller);

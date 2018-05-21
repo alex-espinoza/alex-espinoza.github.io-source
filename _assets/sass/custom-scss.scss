@@ -67,14 +67,36 @@ a {
   transition: background-color 2s;
 }
 
+@keyframes upAndDown {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-30px) rotate(0deg);
+  }
+}
+
+@keyframes upAndDownReverse {
+  0% {
+    transform: translateY(0px) rotate(180deg);
+  }
+  100% {
+    transform: translateY(-30px) rotate(180deg);
+  }
+}
+
 #fixed-container .scroll-hint {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  padding: 0 10px 10px 0;
+  right: 10px;
+  bottom: 10px;
   color: $main-text-color;
-  font-size: $font-size-h3;
+  font-size: $font-size-h1;
   z-index: 2;
+  animation: upAndDown 1.5s ease infinite alternate;
+
+  &.show {
+    animation: upAndDownReverse 1.5s ease infinite alternate;
+  }
 }
 
 #fixed-container .hero-text {
